@@ -6,21 +6,25 @@
     <title>Contact | Vanessa Njoroge</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <!-- Theme toggle (optional, remove if not using on all pages) -->
-    <input type="checkbox" id="theme-toggle" />
-    <label
-      for="theme-toggle"
-      class="toggle-label"
-      aria-label="Toggle theme"
-    ></label>
+    <!-- Hidden theme toggle checkbox -->
+    <input
+      type="checkbox"
+      id="theme-toggle"
+      class="visually-hidden"
+      aria-label="Toggle dark/light theme"
+    />
+    <label for="theme-toggle" class="toggle-label" role="switch">
+      <span class="visually-hidden">Toggle dark/light theme</span>
+    </label>
 
     <header>
       <h1>Vanessa Njoroge</h1>
       <p>Product Manager | Frontend Enthusiast | Tech for Good Advocate</p>
     </header>
 
-    <nav>
+    <nav aria-label="Main navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -28,23 +32,53 @@
         <li><a href="skills.html">Skills</a></li>
         <li><a href="interests.html">Interests</a></li>
         <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
       </ul>
     </nav>
 
     <main>
-      <section>
+      <section class="contact-section">
         <h2>Contact Me</h2>
-        <form action="https://formsubmit.co/YOUR_EMAIL" method="POST">
-          <input type="text" name="name" placeholder="Your Name" required />
-          <input type="email" name="email" placeholder="Your Email" required />
-          <textarea
-            name="message"
-            placeholder="Write your message..."
-            rows="6"
-            required
-          ></textarea>
-          <button type="submit">Send Message</button>
+
+        <form
+          action="https://formsubmit.co/your@email.com"
+          method="POST"
+          class="contact-form"
+        >
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Write your message..."
+              rows="6"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Send Message</button>
         </form>
       </section>
     </main>
