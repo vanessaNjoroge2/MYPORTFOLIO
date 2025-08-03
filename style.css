@@ -307,6 +307,25 @@ box-shadow: 0 2px 12px rgba(0,0,0,0.07);
   color: #fff;
   transition: background 0.2s, color 0.2s;
 }
+/* Additional inline styles for the social section */
+      .social-links {
+        margin-top: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        justify-content: center;
+      }
+
+      .social-links a {
+        text-decoration: none;
+        color: #0077b5;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+
+      .social-links a:hover {
+        color: #ff5e6c; /* Coral pink hover */
+      }
 /* FOOTER */
 footer {
   text-align: center;
