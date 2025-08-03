@@ -25,3 +25,9 @@ Welcome to my personal web portfolio! This site showcases my skills, projects, a
 | -------- | ----------------- |
 | HTML5    | Git + GitHub      |
 | CSS3     | VS Code           |
+
+## 📸 Screenshots
+
+```markdown
+![Desktop View](assets/desktopview.jpg)
+```
