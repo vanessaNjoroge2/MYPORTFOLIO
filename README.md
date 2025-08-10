@@ -15,7 +15,7 @@ Welcome to my personal web portfolio! This site showcases my skills, projects, a
 
 ## 🚀 Live Demo
 
-👉 [View Portfolio Website](https://vanessaNjoroge2.github.io/MYPORTFOLIO/)
+👉 [View Portfolio Website](https://vanessanjoroge2.github.io/MYPORTFOLIO/)
 
 ---
 
